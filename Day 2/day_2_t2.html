@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+</head>
+<body>
+
+  <h2>Contact Us</h2>
+
+  <form action="process.php" method="post" aria-labelledby="form-title">
+    
+    <fieldset>
+      <legend id="form-title">Personal Information</legend>
+
+      
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name"  placeholder ="Enter Your Name "required ><br><br>
+
+      
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" placeholder ="Enter Your Email Address" required ><br><br>
+
+      
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" placeholder ="Enter Your Mobile No"required><br>
+      <small id="phoneHelp">Enter your phone number with country code</small><br><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+
+      
+      <label for="service">Select Service:</label><br>
+      <select id="service" name="service" required>
+        <option value="">--Choose an option--</option>
+        <option value="web">Web Development</option>
+        <option value="design">UI/UX Design</option>
+        <option value="seo">SEO</option>
+        <option value="seo">App Development</option>
+      </select><br><br>
+    
+      <p>Select Gender:</p>
+      <input type="radio" id="male " name ="Gender"required>
+      <label for="male" value="male">Male</label><br>
+
+      <input type="radio" id="female" name="Gender" required>
+      <label for="female" value ="female">Female</label><br><br>
+
+      
+      <p>Subscribe to:</p>
+      <input type="checkbox" id="newsletter" name="subscribe" value="newsletter">
+      <label for="newsletter">Newsletter</label><br>
+
+      <input type="checkbox" id="updates" name="subscribe" value="updates">
+      <label for="updates">Product Updates</label><br><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Message</legend>
+
+      
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="30" required ></textarea><br><br>
+
+    </fieldset>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
